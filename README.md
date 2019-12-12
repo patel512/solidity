@@ -11,15 +11,6 @@
         -   [Parameters][7]
     -   [listenForUserData][8]
         -   [Parameters][9]
--   [externalFunctions][10]
-    -   [generateReqNo][11]
-    -   [getApiKey][12]
-    -   [generateqr][13]
-        -   [Parameters][14]
-    -   [listenForServiceProviderResponse][15]
-        -   [Parameters][16]
-    -   [listenForUserData][17]
-        -   [Parameters][18]
 
 ## externalFunctions
 
@@ -53,47 +44,7 @@ API for generating QR Code
 
 #### Parameters
 
--   `requestNo` **[string][19]** Socket Id for listening.
-
-### listenForServiceProviderResponse
-
-Start Listening for service provider name
-
-#### Parameters
-
--   `requestNo`  
--   `cb`  
-
-### listenForUserData
-
-Socket listening for user Data after approval from user through app
-
-#### Parameters
-
--   `requestNo` **any** 
--   `cb` **any** 
-
-## externalFunctions
-
-How to use it
-
-### generateReqNo
-
-Generates socket Id Called once and store it persistently somewhere
-
-Returns **any** socketId for communication
-
-### getApiKey
-
-Returns API Key for vendor
-
-### generateqr
-
-API for generating QR Code
-
-#### Parameters
-
--   `requestNo` **[string][19]** Socket Id for listening.
+-   `requestNo` **[string][10]** Socket Id for listening.
 
 ### listenForServiceProviderResponse
 
@@ -131,22 +82,4 @@ Socket listening for user Data after approval from user through app
 
 [9]: #parameters-2
 
-[10]: #externalfunctions-1
-
-[11]: #generatereqno-1
-
-[12]: #getapikey-1
-
-[13]: #generateqr-1
-
-[14]: #parameters-3
-
-[15]: #listenforserviceproviderresponse-1
-
-[16]: #parameters-4
-
-[17]: #listenforuserdata-1
-
-[18]: #parameters-5
-
-[19]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[10]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
