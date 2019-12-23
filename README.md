@@ -2,7 +2,7 @@
 
 #### Table of Contents
 
--   [How_to_Use_the_SDK[1]]
+-   [How_to_Use_the_SDK][1]
 -   [getApiKey][2]
 -   [generateqr][3]
     -   [Examples][4]
