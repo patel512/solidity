@@ -2,16 +2,16 @@
 
 #### Table of Contents
 
--   [How_to_Use_the_SDK[0]]
--   [getApiKey][1]
--   [generateqr][2]
-    -   [Examples][3]
--   [listenForServiceProviderResponse][4]
-    -   [Parameters][5]
-    -   [Examples][6]
--   [listenForUserData][7]
-    -   [Parameters][8]
-    -   [Examples][9]
+-   [How_to_Use_the_SDK[1]]
+-   [getApiKey][2]
+-   [generateqr][3]
+    -   [Examples][4]
+-   [listenForServiceProviderResponse][5]
+    -   [Parameters][6]
+    -   [Examples][7]
+-   [listenForUserData][8]
+    -   [Parameters][9]
+    -   [Examples][10]
 
 ### How_to_Use_the_SDK
   1. Register yourself as vendor with myearth.id and paste the api key in api.js file
