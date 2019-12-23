@@ -4,49 +4,94 @@
 
 -   [getApiKey][1]
 -   [generateqr][2]
--   [listenForServiceProviderResponse][3]
-    -   [Parameters][4]
--   [listenForUserData][5]
-    -   [Parameters][6]
+    -   [Examples][3]
+-   [listenForServiceProviderResponse][4]
+    -   [Parameters][5]
+    -   [Examples][6]
+-   [listenForUserData][7]
+    -   [Parameters][8]
+    -   [Examples][9]
 
 ## getApiKey
 
 Returns API Key for vendor
 
-Returns **[String][7]** An APIKey wor the Web
-
 ## generateqr
 
-This generates the qr code
+API for generating QR Code
 
-Returns **[String][7]** qrdata string
+### Examples
+
+```javascript
+response 
+qrData=`{"apikey":"werty","encryptionkey":"1234567","reqNo":"qwertyuuytr","sessionKey":"wertyuytresd" }`
+```
 
 ## listenForServiceProviderResponse
 
-Listen for the Service provider response
+Start Listening for service provider name
 
 ### Parameters
 
--   `cb` **any** Gives a call ack with encapsulated  data
+-   `cb`  
+
+### Examples
+
+```javascript
+O/P Successfull
+{
+"serviceProvider": "FCart ",
+}
+```
+
+```javascript
+O/P Unsuccessfull 
+Error object
+```
 
 ## listenForUserData
 
-A Socket Listener for user data will return data if user authorizes the request else will return false
+Socket listening for user Data after approval from user through app
 
 ### Parameters
 
--   `cb` **any** 
+-   `cb` **any** callback for data response
+
+### Examples
+
+```javascript
+listenForUserData(cb)
+response successfull
+newreq:{
+"pressed":false,
+"userEmail":"srvo@gmail.com",
+"userMobileNo":"+916361887698",
+"fname":"Sarvottam",
+"dob":"05121993",
+"emailVerified":true
+"mobileVerified":false
+"score":250
+}
+//Unsuccessfull 
+* newreq:{
+"pressed":true,
+}
+```
 
 [1]: #getapikey
 
 [2]: #generateqr
 
-[3]: #listenforserviceproviderresponse
+[3]: #examples
 
-[4]: #parameters
+[4]: #listenforserviceproviderresponse
 
-[5]: #listenforuserdata
+[5]: #parameters
 
-[6]: #parameters-1
+[6]: #examples-1
 
-[7]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[7]: #listenforuserdata
+
+[8]: #parameters-1
+
+[9]: #examples-2
